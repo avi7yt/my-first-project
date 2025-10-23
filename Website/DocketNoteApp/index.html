@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docket Note</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="w-full h-screen flex gap-5" id="docket">
+        <aside class="p-5 flex flex-col items-center gap-26 border-r border-gray-200">
+            <div>
+                <h1 class="text-xl font-semibold">Docket</h1>
+            </div>
+            <div>
+                <i class="fa-solid fa-circle-plus text-4xl cursor-pointer" id="addNoteBtn"></i>
+            </div>
+        </aside>
+        <main class="grow py-5 px-10 flex flex-col gap-20">
+            <header>
+                <div class="relative">
+                    <input class="px-15 py-2 border border-gray-200 rounded-full" type="text" placeholder="Search">
+                    <i class="fa-solid fa-magnifying-glass absolute top-3 left-3 font-thin text-xl text-gray-600"></i>
+                </div>
+            </header>
+            <div>
+                <h1 class="text-5xl font-semibold">Notes</h1>
+            </div>
+            <div class="notesContainer grid grid-cols-3 gap-5">
+                <!-- <div class="w-[300px] h-[250px] bg-orange-300 p-5 rounded-2xl flex flex-col gap-3" id="note">
+                    <div class="grow">
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quidem ad odio dicta quia ea dignissimos delectus quasi similique totam.</p> -->
+                          <!-- <textarea class="w-full h-full" name="write-note" id="write-note" placeholder="Write your note here--"></textarea> -->
+                    <!-- </div> -->
+                    <!-- <div class="flex justify-between items-center">
+                        <span>May 21,2020</span>
+                        <div class="w-[30px] h-[30px] bg-black rounded-full p-4 flex justify-center items-center text-white cursor-pointer">
+                            <i class="fa-solid fa-pen"></i>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </main>
+    </section>
+
+
+
+
+
+    <script src="/Website/DocketNoteApp/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header_1</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+</head>
+<body>
+        <section class="bg-blue-950 text-gray-300">
+            <header class="w-full flex justify-between items-center py-10 px-10 text-orange-400">
+                <div class="sm:hidden"><i class="fa-solid fa-bars cursor-pointer"></i></div>
+                
+                <div class="logo">
+                    <h1 class="text-2xl font-thin text-orange-400">TryThis</h1>
+                </div>
+                <menu>
+                    <ul class="sm:flex sm:gap-3 capitalize font-semibold hidden ">
+                        <li class="hover:text-orange-600"><a href="#home">home</a></li>
+                        <li class="hover:text-orange-600"><a href="#about">about</a></li>
+                        <li class="hover:text-orange-600"><a href="#service">service</a></li>
+                        <li class="hover:text-orange-600"><a href="#profile">profile</a></li>
+                    </ul>
+                </menu>
+                <div class="search relative"><input class="bg-orange-50 py-2 px-5 rounded-lg focus:outline-2 focus:outline-orange-500 focus:outline-offset-2 text-orange-600 font-semibold placeholder:text-orange-600 hidden md:block" type="text" name="search" id="search" placeholder="Search"><i class="fa-solid fa-magnifying-glass md:absolute md:top-3 md:right-3 cursor-pointer"></i></div>
+            </header>
+        </section>
+</body>
+</html>

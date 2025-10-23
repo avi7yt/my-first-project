@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+    <link rel="stylesheet" href="/src/output.css">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <section class="w-full h-screen p-15 flex flex-col gap-10" id="myCart">
+        <header class="w-full flex justify-between">
+            <h1 class="text-4xl font-bold">My Cart</h1>
+            <button class="px-4 py-2 bg-gray-200 rounded-full cursor-pointer hover:bg-gray-300"><i class="fa-solid fa-arrow-left mr-3"></i>Continue shopping</button>
+        </header>
+        <main>
+            <table class="w-full border-spacing-4">
+                <tr class="border-b border-gray-200">
+                    <th class="p-4">PRODUCT</th>
+                    <th class="p-4 text-left">PRICE</th>
+                    <th class="p-4 text-left">QTY</th>
+                    <th class="p-4 text-left">TOTAL</th>
+                </tr>
+                <tr class="border-b border-gray-200">
+                    <td class="p-4" id="productDetails">
+                        <div>
+                            <div>
+                                <img src="" alt="productImg">
+                            </div>
+                            <div>
+                                <h3>Xiaomi 365</h3>
+                                <p>#21433254532</p>
+                                <p>Color:White // Extra: Sport Tire + Battery High 100</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="p-4" id="prideDetails">
+                        <p>+50.99$ Sport Tire</p>
+                        <p>+35$ Battery High</p>
+                        <h3>484.99$</h3>
+                    </td>
+                    <td class="p-4" id="qtyDetails">
+                        <div>
+                            <i class="fa-solid fa-minus"></i>
+                            <span>1</span>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </td>
+                    <td class="p-4" id="totalDetails">
+                        <div>
+                            <span>484.99$</span>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="border-b border-gray-200">
+                    <td class="p-4" id="productDetails">
+                        <div>
+                            <div>
+                                <img src="" alt="productImg">
+                            </div>
+                            <div>
+                                <h3>Xiaomi 365</h3>
+                                <p>#21433254532</p>
+                                <p>Color:White // Extra: Sport Tire + Battery High 100</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="p-4" id="prideDetails">
+                        <p>+50.99$ Sport Tire</p>
+                        <p>+35$ Battery High</p>
+                        <h3>484.99$</h3>
+                    </td>
+                    <td class="p-4" id="qtyDetails">
+                        <div>
+                            <i class="fa-solid fa-minus"></i>
+                            <span>1</span>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </td>
+                    <td class="p-4" id="totalDetails">
+                        <div>
+                            <span>484.99$</span>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </td>
+                </tr>
+                
+            </table>
+        </main>
+    </section>
+
+
+
+
+    <script src="/ui-component/CartPage/script.js"></script>
+</body>
+</html>

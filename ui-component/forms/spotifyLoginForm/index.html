@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpotifyLoginForm</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="w-full h-screen bg-gray-500 flex justify-center items-center">
+
+        <div class="bg-gray-800 p-10 flex flex-col items-center gap-5 rounded-lg  text-white">
+            <div class="logo flex justify-center items-center gap-1">
+                <img class="w-[30px] h-[30px]" src="/ui-component/forms/spotifyLoginForm/asset/spotify.png" alt="spotify.logo">
+                <h1 class="text-xl font-bold">Spotify</h1>
+            </div>
+            <div class="flex justify-center gap-8">
+                <a class="capitalize hover:underline" href="#signin"><span class="p-2">Sign In</span></a>
+                <a class="capitalize hover:underline" href="#signup"><span class="p-2">Sign Up</span></a>
+            </div>
+            <div>
+                <form class="flex flex-col items-center gap-4">
+                    <input class="bg-white text-gray-500 p-2 rounded-full" type="text" placeholder="Username">
+                    <input class="bg-white text-gray-500 p-2 rounded-full" type="password" placeholder="Password">
+                </form>
+            </div>
+            <div>
+                <input type="checkbox">
+                <span>stay signed in </span>
+            </div>
+            <div>
+                <button>Sign in</button>
+            </div>
+            <div>
+                <h3>Forgot Password?</h3>
+            </div>
+        </div>
+
+</body>
+</html>

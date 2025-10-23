@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-200 w-full h-screen flex justify-center items-center">
+        <div class="px-5 py-10 bg-white rounded-2xl w-[400px] h-auto flex flex-col gap-3 justify-center">
+            <h1 class="text-lg font-bold mb-15 text-green-600"><img class="w-[20px] h-[20px] inline mx-1" src="/ui-component/forms/2nd temp login form/asset/wave_9437514.png" alt="emoji">Welcome Back!</h1>
+            <form class="w-full flex flex-col gap-3 mb-7">
+                <div>
+                    <input class="w-full bg-gray-100 px-5 py-2 rounded-2xl text-gray-700 focus:outline-green-600" type="email" name="email" id="email" placeholder="Your Email">
+                </div>
+                    
+                    <div class="relative">
+                         <input class="w-full bg-gray-100 px-5 py-2 rounded-2xl text-gray-700 focus:outline-green-600
+                         " type="password" name="password" id="password" placeholder="Password">
+                       <i class="fa-regular fa-eye " id="passwordIcon" style="position: absolute; top: 12px; right: 16px; cursor: pointer;"></i>
+                        </div>
+                   <a class="text-right text-green-600 font-semibold cursor-pointer hover:text-green-700" href="#forgetPassword">Forget Password</a>
+
+                   <button class="bg-green-600 px-5 py-2 rounded-lg text-white hover:bg-green-700 cursor-pointer font-semibold" id="loginbtn">Login</button>  
+            </form>
+            <p class="text-center font-bold">Don't have an account? <a class="text-green-600 hover:text-green-700" href="#">Sign Up</a> </p>
+        </div>
+
+        <script>
+            const passwordIcon = document.querySelector('#passwordIcon');
+            passwordIcon.addEventListener('click',function(e){
+                if (e.target.className != 'fa-regular fa-eye-slash') {
+                     e.target.setAttribute('class','fa-regular fa-eye-slash');
+                    document.querySelector('#password').setAttribute('type','text');
+                    
+                } else {
+                    e.target.setAttribute('class','fa-regular fa-eye');
+                    document.querySelector('#password').setAttribute('type','password');
+                }
+            });
+
+            const loginbtn = document.querySelector('#loginbtn');
+            loginbtn.addEventListener('click',function(e){
+                formvalidation();
+            });
+        </script>
+</body>
+</html>

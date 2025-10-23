@@ -1,0 +1,14 @@
+#loginPage
+{
+    background-image: url('/ui-component/LoginPage/asset/pexels-lureofadventure-31029708.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat; 
+}
+
+
+
+header
+{
+    display: flex;
+}
