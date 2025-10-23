@@ -1,0 +1,129 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family:"Open Sans", sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popCard
+{
+    width: 400px;
+    height:200px;
+    background-color: #181818;
+    border-radius:43px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.popCard .header
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.popCard .header h5,h6 
+{
+    color: #cbcaca;
+    letter-spacing: 0.5px;
+}
+
+.popCard .main 
+{
+    display: flex;
+    gap: 20px;
+}
+
+.popCard .main .profileImage
+{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+}
+
+.profileImage img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.userDetails h3
+{
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.userDetails ul 
+{
+    display: flex;
+}
+
+
+.userDetails ul li  
+{
+    color: #cbcaca;
+}
+
+
+.userDetails ul li::marker
+{
+    color: aqua;
+}
+
+.btns
+{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+button 
+{
+    padding: 10px 20px;
+    border-radius: 23px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover 
+{
+    background-color: aqua;
+}
+
+button i 
+{
+    margin-right: 5px;
+}
+
+.floatContainer
+{
+    width: 400px;
+    height:100px; 
+    border-end-end-radius: 43px;
+    border-end-start-radius: 43px;
+    padding: 10px;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    background-color: aqua;
+    position: relative;
+    top: -55px;
+    z-index: -111;
+}
+
+
